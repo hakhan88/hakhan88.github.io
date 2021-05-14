@@ -1,1 +1,66 @@
-testing
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>tim brack, senior art director</title>
+    <meta name="description" content="senior art director & concept creative working for jung von matt.">
+
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="css/animate.css" rel="stylesheet" type="text/css">
+
+    <script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="js/functions.js"></script>
+    <script type="text/javascript" src="js/jquery.onepage-scroll.js"></script>
+    <style>
+        .cryptedmail:after {
+            content: attr(data-name);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="home" class="animated fadeInUp">
+        hi. my name is <a href="#" class="scroll">haris</a>. im a sitar player and a software engineer.
+    </div>
+    <div id="home" class="animated fadeInUp">
+        i work with<a href="#" class="scroll">react, angular, node js, php</a> and
+        java.
+    </div>
+    <div id="contact">
+        <h1>
+            you can contact me via
+            <a href="#" class="cryptedmail" data-name="mail" data-domain="timbrack" data-tld="de"
+                onclick="window.location.href = 'mailto:hakhan88@gmail.com'"></a>
+            or <a href="https://www.linkedin.com/in/hariskhan1988/" target="_blank">linkedin</a>.
+        </h1>
+        <!--img src="images/tim_brack.jpg"-->
+    </div>
+
+    <div id="work_wrapper">
+
+        <div id="logo">
+            <a href="#home" class="scroll animated fadeIn delay-1s">tim brack, art director</a>
+        </div>
+
+        <div class="work" id="otto_sockenschwein">
+            <div class="credit">
+                Haris a. khan
+            </div>
+            <h2>Haris</h2>
+            <img src="images/haris-sitar.jpg">
+        </div>
+
+    </div>
+
+    <script src="js/jquery.fittext.js"></script>
+    <script type="text/javascript">
+        $("#home").fitText(0.81, { minFontSize: '20px', maxFontSize: '350px' });
+        $(".work h1").fitText(0.62, { minFontSize: '30px', maxFontSize: '500px' });
+        $(".work h2").fitText(0.45, { minFontSize: '30px', maxFontSize: '500px' });
+        $("#contact h1").fitText(0.80, { minFontSize: '140px', maxFontSize: '350px' });
+        $("#fittext3").fitText(1.1, { minFontSize: '50px', maxFontSize: '75px' });
+    </script>
+</body>
+
+</html>

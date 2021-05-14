@@ -1,0 +1,397 @@
+@font-face {
+    font-family: 'Grotesk-Regular';
+    src: url('../fonts/GroteskRegular_gdi.eot');
+    src: url('../fonts/GroteskRegular_gdi.eot#iefix') format('embedded-opentype'),
+        url('../fonts/GroteskRegular_gdi.woff') format('woff'),
+        url('../fonts/GroteskRegular_gdi.ttf') format('truetype'),
+        url('../fonts/GroteskRegular_gdi.svg#GroteskRegular-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-25CA;
+}
+
+@font-face {
+    font-family: 'Grotesk-Bold';
+    src: url('../fonts/GroteskBold_gdi.eot');
+    src: url('../fonts/GroteskBold_gdi.eot#iefix') format('embedded-opentype'),
+        url('../fonts/GroteskBold_gdi.woff') format('woff'),
+        url('../fonts/GroteskBold_gdi.ttf') format('truetype'),
+        url('../fonts/GroteskBold_gdi.svg#GroteskBold-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-25CA;
+}
+
+html {
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
+    position: relative;
+    font-weight: normal;
+}
+
+a,
+a:link,
+a:visited,
+a:active {
+    text-decoration: none;
+    color: #000;
+    cursor: pointer !important;
+}
+
+a:hover {
+    cursor: pointer !important;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    -webkit-font-smoothing: antialiased;
+    position: relative;
+    height: auto;
+    font-weight: normal;
+}
+
+#home {
+    font-family: 'Grotesk-Bold';
+    font-size: 212px;
+    line-height: 0.99em;
+    padding: 120px 75px 0px 75px;
+    margin: 0 0 200px 0;
+    width: calc(100% - 150px);
+    height: auto;
+    background-color: #fff;
+    z-index: 5;
+    position: relative;
+    letter-spacing: -0.02em;
+}
+
+#home a:link,
+#home a:visited,
+#home a:active {
+    color: #999;
+}
+
+#home a:hover {
+    text-decoration: line-through;
+}
+
+#work_wrapper {
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.credit {
+    position: absolute;
+    top: 245px;
+    left: -85px;
+    font-family: 'Grotesk-Bold';
+    font-size: 20px;
+    letter-spacing: 0.03em;
+    z-index: 999999;
+    width: 380px;
+    heigh: 20px;
+    text-align: right;
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+}
+
+#logo {
+    position: fixed;
+    top: 60px;
+    right: 80px;
+    font-family: 'Grotesk-Bold';
+    font-size: 20px;
+    letter-spacing: 0.03em;
+    z-index: 2;
+    width: 380px;
+    height: 20px;
+    text-align: right;
+}
+
+.work {
+    position: relative;
+    padding: 0px;
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+.work img {
+    height: auto;
+    max-height: calc(100%);
+    max-width: auto;
+    min-width: auto;
+    width: auto;
+    position: absolute;
+    top: 40px;
+    left: -14%;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    display: block;
+    z-index: 1;
+}
+
+.work h1,
+.work h2 {
+    font-family: 'Grotesk-Bold';
+    position: absolute;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    bottom: 50px;
+    right: 90px;
+    display: block;
+    text-align: right;
+    letter-spacing: -0.03em;
+    /*	border: 1px solid #fff;*/
+    z-index: 2;
+    line-height: 0.80em;
+    font-weight: normal;
+}
+
+.work h2 {
+    bottom: 20px;
+}
+
+#contact {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 80px 0 0 0;
+    width: 100%;
+    height: auto;
+    z-index: 5;
+    position: relative;
+    background-color: #222;
+    overflow: hidden;
+}
+
+#contact h1 {
+    font-family: 'Grotesk-Bold';
+    line-height: 0.88em;
+    font-size: 200px;
+    display: block;
+    text-align: left;
+    Left: 80px;
+    bottom: -65px;
+    width: calc(100% - 80px);
+    position: absolute;
+    letter-spacing: -0.02em;
+    color: #fff;
+    z-index: 2;
+    font-weight: normal;
+}
+
+#contact a:link,
+#contact a:visited,
+#contact a:active {
+    color: #888;
+}
+
+#contact a:hover {
+    text-decoration: line-through;
+}
+
+#contact h1 a:hover {
+    text-decoration: line-through;
+}
+
+#contact img {
+    position: absolute;
+    height: auto;
+    max-height: calc(100% - 170px);
+    left: 85px;
+    bottom: 80px;
+    display: block;
+    z-index: 1;
+}
+
+.video-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+
+}
+
+.video-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    margin-bottom: 80px;
+}
+
+#work_details {
+    font-family: 'Grotesk-Bold';
+    font-size: 50px;
+    line-height: 1.2em;
+    width: calc(100% - 160px);
+    padding: 0 80px;
+    height: auto;
+    background-color: #fff;
+    z-index: 5;
+    position: relative;
+    letter-spacing: -0.01em;
+    margin-top: 60px;
+}
+
+.work_details_smaller {
+    width: 100%;
+    max-width: 1200px;
+}
+
+#work_details a:link,
+#work_details a:visited,
+#work_details a:active {
+    color: #777;
+}
+
+#work_details a:hover {
+    text-decoration: line-through;
+}
+
+#work_details img {
+    display: block;
+    width: auto;
+    max-width: 100%;
+    min-width: 100%;
+    max-height: none;
+    position: relative;
+    margin: 70px 0 0 0;
+    padding: 0;
+    left: auto;
+}
+
+.gif {
+    max-width: calc(30% - 60px) !important;
+    min-width: calc(30% - 60px) !important;
+    float: left;
+    margin: 60px 60px 0 0 !important;
+}
+
+/* Smartphone */
+@media only screen and (min-device-width : 0px) and (max-device-width : 900px) {
+
+    #home {
+        font-size: 160px !important;
+        line-height: 0.99em;
+        padding: 150px 0 0 0 !important;
+        margin: 0 0 300px 0;
+        width: 100% !important;
+        height: 100% !important;
+        letter-spacing: normal;
+    }
+
+    #logo {
+        top: 60px;
+        right: 80px;
+        font-size: 50px;
+        letter-spacing: 0.03em;
+        z-index: 2;
+        width: 500px !important;
+        height: 40px;
+    }
+
+    .work h1,
+    .work h2 {
+        font-weight: normal !important;
+        font-size: 130px !important;
+        position: relative !important;
+        width: 100% !important;
+        margin: 0px 0 0px 0 !important;
+        padding: 0 0 20px 0 !important;
+        bottom: auto !important;
+        right: auto !important;
+        text-align: left;
+        z-index: 2;
+        line-height: 0.80em;
+        letter-spacing: normal;
+    }
+
+    .work {
+        margin-bottom: 200px !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 100% !important;
+    }
+
+
+    .work img {
+        width: auto !important;
+        max-width: 100% !important;
+        min-width: 100% !important;
+        max-height: none !important;
+        position: relative !important;
+        margin: 0px 0 60px 0 !important;
+        top: 0;
+        left: 0 !important;
+        right: 0;
+        bottom: 0;
+        margin: 0;
+        display: block;
+    }
+
+    #contact {
+        margin: 0px 0 0 0 !important;
+        height: auto !important;
+    }
+
+    #contact h1 {
+        font-weight: normal !important;
+        font-size: 200px !important;
+        Left: auto !important;
+        bottom: auto !important;
+        width: 100% !important;
+        position: relative !important;
+        letter-spacing: normal !important;
+    }
+
+    #work_details {
+        font-size: 70px !important;
+        width: calc (100% - 80px) !important;
+        padding: 0 0px !important;
+        margin: 60px 40px 60px 40px !important;
+    }
+
+
+    .gif {
+        max-width: 100% !important;
+        min-width: 100% !important;
+        margin: 60px 0px 0 0 !important;
+    }
+
+    .credit {
+        display: none !important;
+        position: relative;
+        top: auto;
+        left: auto;
+        font-size: 20px;
+        letter-spacing: 0.03em;
+        z-index: 999999;
+        width: auto;
+        height: auto;
+        text-align: right;
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+    }
+
+
+}
+
+/* END Smartphone */
