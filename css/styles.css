@@ -55,12 +55,12 @@ body {
     font-weight: normal;
 }
 
-#home {
+.home {
     font-family: 'Grotesk-Bold';
-    font-size: 212px;
+    font-size: 80px;
     line-height: 0.99em;
-    padding: 120px 75px 0px 75px;
-    margin: 0 0 200px 0;
+    padding: 50px 200px 0px 200px;
+    margin: 0 0 100px 0;
     width: calc(100% - 150px);
     height: auto;
     background-color: #fff;
@@ -69,13 +69,13 @@ body {
     letter-spacing: -0.02em;
 }
 
-#home a:link,
-#home a:visited,
-#home a:active {
+.home a:link,
+.home a:visited,
+.home a:active {
     color: #999;
 }
 
-#home a:hover {
+.home a:hover {
     text-decoration: line-through;
 }
 
@@ -96,7 +96,7 @@ body {
     letter-spacing: 0.03em;
     z-index: 999999;
     width: 380px;
-    heigh: 20px;
+    height: 20px;
     text-align: right;
     transform: rotate(-90deg);
     -webkit-transform: rotate(-90deg);
@@ -128,10 +128,9 @@ body {
 .work img {
     height: auto;
     max-height: calc(100%);
-    max-width: auto;
     min-width: auto;
     width: auto;
-    position: absolute;
+    position: relative;
     top: 40px;
     left: -14%;
     right: 0;
@@ -163,51 +162,55 @@ body {
     bottom: 20px;
 }
 
-#contact {
+.contact {
+    font-family: 'Grotesk-Bold';
+    font-size: 80px;
+    line-height: 0.99em;
+    padding: 50px 200px 0px 200px;
+    margin: 0 0 100px 0;
+    width: calc(100% - 150px);
+    height: auto;
+    background-color: #fff;
+    z-index: 5;
+    position: relative;
+    letter-spacing: -0.02em;
     position: relative;
     width: 100%;
     height: 100%;
-    padding: 0px;
-    margin: 80px 0 0 0;
     width: 100%;
     height: auto;
     z-index: 5;
-    position: relative;
-    background-color: #222;
+    background-color: #222 !important;
     overflow: hidden;
 }
 
-#contact h1 {
+.contact h1 {
     font-family: 'Grotesk-Bold';
     line-height: 0.88em;
-    font-size: 200px;
+    font-size: 120px;
     display: block;
     text-align: left;
-    Left: 80px;
-    bottom: -65px;
-    width: calc(100% - 80px);
-    position: absolute;
     letter-spacing: -0.02em;
     color: #fff;
     z-index: 2;
     font-weight: normal;
 }
 
-#contact a:link,
-#contact a:visited,
-#contact a:active {
+.contact a:link,
+.contact a:visited,
+.contact a:active {
     color: #888;
 }
 
-#contact a:hover {
+.contact a:hover {
     text-decoration: line-through;
 }
 
-#contact h1 a:hover {
+.contact h1 a:hover {
     text-decoration: line-through;
 }
 
-#contact img {
+.contact img {
     position: absolute;
     height: auto;
     max-height: calc(100% - 170px);
@@ -285,7 +288,7 @@ body {
 /* Smartphone */
 @media only screen and (min-device-width : 0px) and (max-device-width : 900px) {
 
-    #home {
+    .home {
         font-size: 160px !important;
         line-height: 0.99em;
         padding: 150px 0 0 0 !important;
@@ -344,12 +347,12 @@ body {
         display: block;
     }
 
-    #contact {
+    .contact {
         margin: 0px 0 0 0 !important;
         height: auto !important;
     }
 
-    #contact h1 {
+    .contact h1 {
         font-weight: normal !important;
         font-size: 200px !important;
         Left: auto !important;
