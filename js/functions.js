@@ -4,15 +4,3 @@ $(document).ready(function () {
         $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
     });
 });
-
-$(document).ready(function () {
-    // var windowHeight = $(window).height();
-    // $(".work").css('height', windowHeight);
-
-});
-
-$(window).resize(function () {
-    // var windowHeight = $(window).height();
-    // $(".work").css('height', windowHeight);
-
-});
