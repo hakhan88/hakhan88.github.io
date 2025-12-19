@@ -1607,6 +1607,11 @@ section,
   color: var(--default-color);
   text-align: center;
   background: linear-gradient(120deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0));
+  transition: opacity 0.35s ease;
+}
+
+.portfolio .portfolio-wrap:hover .portfolio-placeholder {
+  opacity: 0;
 }
 
 .portfolio .portfolio-wrap img {
