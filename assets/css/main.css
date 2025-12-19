@@ -12,13 +12,15 @@
 --------------------------------------------------------------*/
 /* Fonts */
 :root {
-  --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Ubuntu",  sans-serif;
-  --nav-font: "Nunito",  sans-serif;
+  --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: "Ubuntu", sans-serif;
+  --nav-font: "Nunito", sans-serif;
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
-:root { 
+:root {
   --background-color: #1f1f1f; /* Background color for the entire website, including individual sections */
   --default-color: #ffffff; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #ffffff; /* Color for headings, subheadings and title throughout the website */
@@ -29,7 +31,12 @@
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
-  --nav-color: rgba(236, 236, 236, 0.59);  /* The default color of the main navmenu links */
+  --nav-color: rgba(
+    236,
+    236,
+    236,
+    0.59
+  ); /* The default color of the main navmenu links */
   --nav-hover-color: #ffffff; /* Applied to main navmenu links when they are hovered over or active */
   --nav-mobile-background-color: #393939; /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #393939; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
@@ -89,8 +96,12 @@ h6 {
 
 .buzzword {
   font-style: italic;
-  color: color-mix(in srgb, var(--accent-color), transparent 20%);
+  font-weight: 250;
+  color: color-mix(in srgb, var(--accent-color), var(--default-color) 20%);
   letter-spacing: 0.3px;
+  background: color-mix(in srgb, var(--accent-color), transparent 95%);
+  padding: 2px 4px;
+  border-radius: 4px;
 }
 
 /* PHP Email Form Messages
@@ -195,9 +206,8 @@ h6 {
 }
 
 @media (min-width: 1200px) {
-
-  .header~main,
-  .header~#footer {
+  .header ~ main,
+  .header ~ #footer {
     margin-left: 330px;
   }
 }
@@ -346,7 +356,7 @@ h6 {
   background-color: rgba(33, 37, 41, 0.1);
 }
 
-.navmenu .dropdown>.dropdown-active {
+.navmenu .dropdown > .dropdown-active {
   display: block;
   background-color: rgba(33, 37, 41, 0.03);
 }
@@ -364,7 +374,8 @@ h6 {
 
 .footer .copyright {
   padding-top: 40px;
-  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  border-top: 1px solid
+    color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
 .footer .copyright p {
@@ -465,7 +476,8 @@ h6 {
 }
 
 .page-title .container {
-  border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  border-bottom: 1px solid
+    color-mix(in srgb, var(--default-color), transparent 90%);
   padding-bottom: 25px;
 }
 
@@ -484,11 +496,11 @@ h6 {
   font-weight: 400;
 }
 
-.page-title .breadcrumbs ol li+li {
+.page-title .breadcrumbs ol li + li {
   padding-left: 10px;
 }
 
-.page-title .breadcrumbs ol li+li::before {
+.page-title .breadcrumbs ol li + li::before {
   content: "/";
   display: inline-block;
   padding-right: 10px;
@@ -578,7 +590,11 @@ section,
 .hero .background-elements .bg-circle {
   position: absolute;
   border-radius: 50%;
-  background: linear-gradient(45deg, color-mix(in srgb, var(--accent-color), transparent 90%), color-mix(in srgb, var(--accent-color), transparent 95%));
+  background: linear-gradient(
+    45deg,
+    color-mix(in srgb, var(--accent-color), transparent 90%),
+    color-mix(in srgb, var(--accent-color), transparent 95%)
+  );
   animation: float 6s ease-in-out infinite;
 }
 
@@ -629,7 +645,11 @@ section,
   left: 0;
   width: 100%;
   height: 3px;
-  background: linear-gradient(90deg, var(--accent-color), color-mix(in srgb, var(--accent-color), transparent 50%));
+  background: linear-gradient(
+    90deg,
+    var(--accent-color),
+    color-mix(in srgb, var(--accent-color), transparent 50%)
+  );
 }
 
 .hero .hero-text h2 {
@@ -686,7 +706,8 @@ section,
 .hero .hero-actions .btn.btn-primary:hover {
   background-color: color-mix(in srgb, var(--accent-color), black 10%);
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px color-mix(in srgb, var(--accent-color), transparent 70%);
+  box-shadow: 0 8px 25px
+    color-mix(in srgb, var(--accent-color), transparent 70%);
 }
 
 .hero .hero-actions .btn.btn-outline {
@@ -723,7 +744,8 @@ section,
   color: var(--contrast-color);
   background-color: var(--accent-color);
   transform: translateY(-3px);
-  box-shadow: 0 8px 25px color-mix(in srgb, var(--accent-color), transparent 70%);
+  box-shadow: 0 8px 25px
+    color-mix(in srgb, var(--accent-color), transparent 70%);
 }
 
 .hero .hero-visual {
@@ -760,7 +782,6 @@ section,
 }
 
 @keyframes float {
-
   0%,
   100% {
     transform: translateY(0px);
@@ -772,7 +793,6 @@ section,
 }
 
 @keyframes floatIcon {
-
   0%,
   100% {
     transform: translateY(0px) rotate(0deg);
@@ -858,7 +878,11 @@ section,
 # About Section
 --------------------------------------------------------------*/
 .about .profile-card {
-  background: linear-gradient(135deg, var(--surface-color) 0%, color-mix(in srgb, var(--surface-color), var(--accent-color) 5%) 100%);
+  background: linear-gradient(
+    135deg,
+    var(--surface-color) 0%,
+    color-mix(in srgb, var(--surface-color), var(--accent-color) 5%) 100%
+  );
   border-radius: 2rem;
   padding: 2.5rem;
   text-align: center;
@@ -875,7 +899,11 @@ section,
   left: 0;
   right: 0;
   height: 4px;
-  background: linear-gradient(90deg, var(--accent-color), color-mix(in srgb, var(--accent-color), var(--heading-color) 30%));
+  background: linear-gradient(
+    90deg,
+    var(--accent-color),
+    color-mix(in srgb, var(--accent-color), var(--heading-color) 30%)
+  );
 }
 
 @media (max-width: 991px) {
@@ -948,7 +976,11 @@ section,
   align-items: center;
   gap: 0.75rem;
   padding: 0.75rem 1rem;
-  background-color: color-mix(in srgb, var(--surface-color), var(--background-color) 50%);
+  background-color: color-mix(
+    in srgb,
+    var(--surface-color),
+    var(--background-color) 50%
+  );
   border-radius: 0.75rem;
   text-decoration: none;
   color: var(--default-color);
@@ -960,7 +992,8 @@ section,
   background-color: var(--accent-color);
   color: var(--contrast-color);
   transform: translateY(-2px);
-  box-shadow: 0 5px 20px color-mix(in srgb, var(--accent-color), transparent 70%);
+  box-shadow: 0 5px 20px
+    color-mix(in srgb, var(--accent-color), transparent 70%);
 }
 
 .about .contact-links .contact-item i {
@@ -984,7 +1017,11 @@ section,
 
 .about .about-content .section-header .badge-text {
   display: inline-block;
-  background: linear-gradient(135deg, var(--accent-color), color-mix(in srgb, var(--accent-color), var(--heading-color) 20%));
+  background: linear-gradient(
+    135deg,
+    var(--accent-color),
+    color-mix(in srgb, var(--accent-color), var(--heading-color) 20%)
+  );
   color: var(--contrast-color);
   padding: 0.5rem 1.5rem;
   border-radius: 2rem;
@@ -1122,7 +1159,8 @@ section,
 .about .cta-section .btn.btn-primary:hover {
   background-color: color-mix(in srgb, var(--accent-color), black 15%);
   transform: translateY(-2px);
-  box-shadow: 0 10px 30px color-mix(in srgb, var(--accent-color), transparent 60%);
+  box-shadow: 0 10px 30px
+    color-mix(in srgb, var(--accent-color), transparent 60%);
 }
 
 .about .cta-section .btn.btn-outline {
@@ -1158,7 +1196,11 @@ section,
 }
 
 .stats .stats-item {
-  background: linear-gradient(135deg, color-mix(in srgb, var(--surface-color), transparent 5%), var(--surface-color));
+  background: linear-gradient(
+    135deg,
+    color-mix(in srgb, var(--surface-color), transparent 5%),
+    var(--surface-color)
+  );
   border-radius: 15px;
   padding: 40px 20px;
   text-align: center;
@@ -1471,7 +1513,8 @@ section,
 
 .resume .resume-section .resume-item {
   padding-left: 1.5rem;
-  border-left: 2px solid color-mix(in srgb, var(--accent-color), transparent 80%);
+  border-left: 2px solid
+    color-mix(in srgb, var(--accent-color), transparent 80%);
   margin-bottom: 2rem;
   position: relative;
 }
@@ -1540,7 +1583,11 @@ section,
 }
 
 .portfolio .filters-wrapper {
-  background-color: color-mix(in srgb, var(--surface-color), var(--default-color) 3%);
+  background-color: color-mix(
+    in srgb,
+    var(--surface-color),
+    var(--default-color) 3%
+  );
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05);
@@ -1624,7 +1671,11 @@ section,
   font-weight: 600;
   color: var(--default-color);
   text-align: center;
-  background: linear-gradient(120deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0));
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.08),
+    rgba(255, 255, 255, 0)
+  );
   transition: opacity 0.35s ease;
 }
 
@@ -1645,7 +1696,12 @@ section,
   left: 0;
   right: 0;
   padding: 25px;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.4) 60%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0.4) 60%,
+    rgba(0, 0, 0, 0) 100%
+  );
   z-index: 3;
   transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
   transform: translateY(20px);
@@ -1949,7 +2005,11 @@ section,
   position: absolute;
   width: 100%;
   height: 100%;
-  background: radial-gradient(circle at center, color-mix(in srgb, var(--accent-color), transparent 95%), transparent);
+  background: radial-gradient(
+    circle at center,
+    color-mix(in srgb, var(--accent-color), transparent 95%),
+    transparent
+  );
   opacity: 0.5;
   z-index: -1;
 }
@@ -1971,7 +2031,11 @@ section,
   background-color: color-mix(in srgb, var(--accent-color), transparent 85%);
 }
 
-.testimonials .testimonial-item.highlight .testimonial-content .quote-pattern i {
+.testimonials
+  .testimonial-item.highlight
+  .testimonial-content
+  .quote-pattern
+  i {
   color: var(--accent-color);
 }
 
@@ -2020,7 +2084,8 @@ section,
   gap: 1rem;
   margin-top: 1.5rem;
   padding-top: 1.5rem;
-  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 92%);
+  border-top: 1px solid
+    color-mix(in srgb, var(--default-color), transparent 92%);
 }
 
 .testimonials .client-image {
@@ -2262,7 +2327,11 @@ section,
 }
 
 .contact .contact-form .btn:hover {
-  background-color: color-mix(in srgb, var(--accent-color), var(--contrast-color) 20%);
+  background-color: color-mix(
+    in srgb,
+    var(--accent-color),
+    var(--contrast-color) 20%
+  );
 }
 
 /*--------------------------------------------------------------
@@ -2289,7 +2358,10 @@ section,
   bottom: 20px;
 }
 
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
+.portfolio-details
+  .portfolio-details-slider
+  .swiper-pagination
+  .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
   background-color: var(--contrast-color);
@@ -2297,7 +2369,10 @@ section,
   transition: 0.3s;
 }
 
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+.portfolio-details
+  .portfolio-details-slider
+  .swiper-pagination
+  .swiper-pagination-bullet.swiper-pagination-bullet-active {
   opacity: 1;
   background-color: var(--accent-color);
 }
@@ -2314,7 +2389,8 @@ section,
   font-weight: 700;
   margin-bottom: 20px;
   padding-bottom: 20px;
-  border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  border-bottom: 1px solid
+    color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
 .portfolio-details .portfolio-info ul {
@@ -2324,7 +2400,8 @@ section,
 
 .portfolio-details .portfolio-info ul li {
   padding: 10px 0;
-  border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  border-bottom: 1px solid
+    color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
 .portfolio-details .portfolio-info ul li:last-child {
@@ -2430,7 +2507,10 @@ section,
   z-index: 2;
 }
 
-.service-details .service-details-slider .swiper-pagination .swiper-pagination-bullet {
+.service-details
+  .service-details-slider
+  .swiper-pagination
+  .swiper-pagination-bullet {
   width: 10px;
   height: 10px;
   background-color: var(--contrast-color);
@@ -2438,7 +2518,10 @@ section,
   transition: 0.3s;
 }
 
-.service-details .service-details-slider .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+.service-details
+  .service-details-slider
+  .swiper-pagination
+  .swiper-pagination-bullet.swiper-pagination-bullet-active {
   opacity: 1;
   width: 20px;
   border-radius: 5px;
@@ -2492,7 +2575,8 @@ section,
   font-weight: 700;
   margin-bottom: 25px;
   padding-bottom: 15px;
-  border-bottom: 2px solid color-mix(in srgb, var(--accent-color), transparent 85%);
+  border-bottom: 2px solid
+    color-mix(in srgb, var(--accent-color), transparent 85%);
 }
 
 .service-details .service-info .info-item {
@@ -2532,13 +2616,15 @@ section,
   font-weight: 700;
   margin-bottom: 25px;
   padding-bottom: 15px;
-  border-bottom: 2px solid color-mix(in srgb, var(--accent-color), transparent 85%);
+  border-bottom: 2px solid
+    color-mix(in srgb, var(--accent-color), transparent 85%);
 }
 
 .service-details .related-services .service-item {
   margin-bottom: 25px;
   padding-bottom: 25px;
-  border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  border-bottom: 1px solid
+    color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
 .service-details .related-services .service-item:last-child {
@@ -2574,7 +2660,6 @@ section,
 }
 
 @media (max-width: 991px) {
-
   .service-details .service-info,
   .service-details .related-services {
     margin-top: 30px;
