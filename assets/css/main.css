@@ -87,6 +87,12 @@ h6 {
   font-family: var(--heading-font);
 }
 
+.buzzword {
+  font-style: italic;
+  color: color-mix(in srgb, var(--accent-color), transparent 20%);
+  letter-spacing: 0.3px;
+}
+
 /* PHP Email Form Messages
 ------------------------------*/
 .php-email-form .error-message {
