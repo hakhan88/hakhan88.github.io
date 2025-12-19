@@ -500,6 +500,18 @@ section,
   overflow: clip;
 }
 
+/* Add subtle breathing room on the right so content does not hug the viewport edge */
+.main {
+  padding-right: clamp(24px, 4vw, 64px);
+}
+
+@media (max-width: 1199px) {
+  .main {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
 /*--------------------------------------------------------------
 # Global Section Titles
 --------------------------------------------------------------*/
